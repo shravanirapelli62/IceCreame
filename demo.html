@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="btn">
+        <span class="minus">-</span>
+        <span class="num">1</span>
+        <span class="plus">+</span>
+    </div>
+
+    
+    
+    
+    
+    
+    
+</body>
+<script>
+    const plus=document.querySelector(".plus");
+     const minus=document.querySelector(".minus");
+     const num=document.querySelector(".num");
+      let count=1;
+     plus.addEventListener("click",()=>{
+           
+         count++;
+        
+           num.innerHTML=count;
+           console.log(count);
+           
+
+     })
+
+     minus.addEventListener("click",()=>{
+        
+         if(count>1){
+            count--;
+         num.innerHTML=count;
+         console.log(count);   
+
+         }
+        
+
+     })
+
+    
+
+</script>
+</html>
